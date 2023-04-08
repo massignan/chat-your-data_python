@@ -35,7 +35,7 @@ pip install gradio
 
 Create an account in [Pinecone](http:\\pinecones.io) and get your API key.
 
-The STARTER plan is all you need to test the code.
+The STARTER plan is all you need to test the code. Pay attention to limitation of just onde index (database).
 
 Create an index with the followings configuration to use OpenAI ChatGPT API:
 
@@ -93,7 +93,7 @@ Run the application and use the webrowser to use the chat.
 py app.py
 ```
 
-# Troubleshooting
+# Example
 
-You can suffer from memory error due to Python limitations.
+Was used the [World Bank Annual Report 2022 Downloads](https://www.worldbank.org/en/about/annual-report#anchor-annual) as example.
 

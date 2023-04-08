@@ -81,6 +81,8 @@ In the file  (**`query.py`**) there is the [prompt](https://en.wikipedia.org/wik
 
 Adjust the [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) if necessary.
 
+The [OpenAI model](https://platform.openai.com/docs/models) used is **`gpt-3.5-turbo`**. Go to  **`llm = OpenAI(temperature=0,model_name="gpt-3.5-turbo")`** in (**`query.py`**) to change the [OpenAI model](https://platform.openai.com/docs/models).
+
 # Front End
 
 The Chat bot was developed using [Gradio](https://gradio.app) to create a user friendly UI to chat with you data.

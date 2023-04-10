@@ -2,7 +2,7 @@
 
 This project aims to provide a conversational experience with your own PDFs files data using ChatGPT-like model, LangChain, Pinecone and OpenAI, all developed in Python.
 
-This app was developed using the followings referemces:
+This app was developed using the followings references:
 
 [chat-your-data](https://github.com/hwchase17/chat-your-data) developed by HwChase17
 
@@ -19,17 +19,25 @@ First, make sure to install the following Python packages:
 pip install langchain
 ```
 ```bash
+pip install pinecone-client
+```
+```bash
 pip install openai
 ```
+```bash
+pip install tiktoken
+```
+Tiktokon - needed in order to for OpenAIEmbeddings
 ```bash
 pip install PyPDF
 ```
 ```bash
-pip install dotenv
+pip install python-dotenv
 ```
 ```bash
 pip install gradio
 ```
+
 
 ## Pinecone
 
@@ -100,3 +108,16 @@ py app.py
 
 It was used the [World Bank Annual Report 2022](https://www.worldbank.org/en/about/annual-report#anchor-annual) as data source example.
 
+# Troubleshooting
+
+## Pinecone
+
+The STARTER plan has a limit of just one index per account. 
+
+## SSL: CERTIFICATE_VERIFY_FAILED
+
+If you address SSL errors, you can install the **`python-certifi-win32`** package. By doing so, the package will take over the **`certifi`** library utilized in HTTPS requests and integrate the Windows certificate repository to authenticate the certificate and ensure its validity. Just a simple installation of this package can solve the issue.
+
+```bash
+pip install python-certifi-win32
+```

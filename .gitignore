@@ -2,3 +2,7 @@
 # TODO Comment out these rules if environment variables can be committed
 .env
 .env*.local
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]

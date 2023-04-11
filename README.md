@@ -1,6 +1,6 @@
 # chat-your-data_python
 
-This project aims to provide a conversational experience with your own PDFs files data using ChatGPT-like model, LangChain, Pinecone and OpenAI, all developed in Python.
+This project aims to provide a extremely simple conversational experience with your own PDFs files data using ChatGPT-like model, LangChain, Pinecone and OpenAI, all developed in Python.
 
 This app was developed using the followings references:
 
@@ -8,6 +8,11 @@ This app was developed using the followings references:
 
 [gpt4-pdf-chatbot-langchain](https://github.com/mayooear/gpt4-pdf-chatbot-langchain) developed by Maio
 
+## Clone git repo
+
+```bash
+git clone https://github.com/massignan/chat-your-data_python
+```
 
 # Prerequisites
 
@@ -27,7 +32,7 @@ pip install openai
 ```bash
 pip install tiktoken
 ```
-Tiktokon - needed in order to for OpenAIEmbeddings
+Tiktokon - needed in OpenAIEmbeddings
 ```bash
 pip install PyPDF
 ```
@@ -43,7 +48,7 @@ pip install gradio
 
 Create an account in [Pinecone](http://pinecones.io) and get your API key.
 
-The STARTER plan is all you need to test the code. Pay attention to limitation of just onde index (database) in STARTE plan. If necessary, delete de index created in order to test a new index.
+The STARTER plan is all you need to test the code. Pay attention to limitation of just onde index (database) in STARTER plan. If necessary, delete the index created in order to test a new index.
 
 Create an index with the followings configuration to use OpenAI ChatGPT API:
 
@@ -88,17 +93,17 @@ If necessary, adjust the data chunk and overlap values in **`textSplitter = Recu
 
 In the file  (**`query.py`**) there is the [prompt](https://en.wikipedia.org/wiki/Prompt_engineering) condensate question used to create a conversional experience (question + chat history). Also, there is the [prompt](https://en.wikipedia.org/wiki/Prompt_engineering) to question and answer (Q&A).
 
-Adjust the [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) if necessary.
+Adjust the [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) if necessary and according your application.
 
 The [OpenAI model](https://platform.openai.com/docs/models) used is **`gpt-3.5-turbo`**. Go to  **`llm = OpenAI(temperature=0,model_name="gpt-3.5-turbo")`** in (**`query.py`**) to change the [OpenAI model](https://platform.openai.com/docs/models).
 
 # Front End
 
-The Chat bot was developed using [Gradio](https://gradio.app) to create a user friendly UI to chat with you data.
+The Chat Bot was developed using [Gradio](https://gradio.app) to create a user friendly UI to chat with your data.
 
 # Running
 
-Run the application and use the webrowser to use the chat.
+Run the application and use the webrowser to chat with your data.
 
 ```bash
 py app.py

@@ -42,6 +42,10 @@ pip install python-dotenv
 ```bash
 pip install gradio
 ```
+Or simply install all required packages with the following command:
+```bash
+pip install -r requirements.txt
+```
 
 
 ## Pinecone

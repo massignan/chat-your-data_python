@@ -103,7 +103,9 @@ The [OpenAI model](https://platform.openai.com/docs/models) used is **`gpt-3.5-t
 
 # Front End
 
-The Chat Bot was developed using [Gradio](https://gradio.app) to create a user friendly UI to chat with your data.
+A web Chat Bot was developed using [Gradio](https://gradio.app) to create a user friendly UI to chat with your data.
+
+Moreover, there is a command line **`cli_app.py`** avaliable.
 
 # Running
 
